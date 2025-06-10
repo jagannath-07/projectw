@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(28, 28, 50);
+        }
+        *{
+            margin: 0px;
+        }
+        .container{
+            width: 350px;
+            height: 400px;
+            border: 1px solid white;
+            text-align: center;
+            margin: 40px auto;
+            border-radius: 8px;
+        }
+        
+        input{
+            padding: 3px 50px;
+            margin-top: 20px;
+        }
+        h1{
+            color: orange;
+        }
+        a{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <input type="text" placeholder="First Name"><br>
+        <input type="text" placeholder="Last Name"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="number" placeholder="Mobile Number"><br>
+        <input type="password" placeholder="Password"><br>
+        <input type="password" placeholder="Conform Password"><br>
+        <button class="three">Register</button>
+    </div>
+</body>
+</html>
+
+{% endblock %}
